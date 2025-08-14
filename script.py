@@ -1,6 +1,7 @@
-
-print("Hello World!")
-
+print('''
+This app is a calculator
+It will perform some operations
+''')
 
 def calcultaor(a,b,operation="add"):
     if operation == "sub":
@@ -9,6 +10,8 @@ def calcultaor(a,b,operation="add"):
         return a*b
     elif operation == "div":
         return a/b
+    elif operation == "mod":
+        return a%b
     else:
         return a+b
 
@@ -19,3 +22,4 @@ print(f"Sum  {a} + {b} : ",calcultaor(a,b,"add"))
 print(f"Mul  {a} * {b} : ",calcultaor(a,b,"mul"))
 print(f"Div  {a} / {b} : ",calcultaor(a,b,"div"))
 print(f"Sub  {a} - {b} : ",calcultaor(a,b,"sub"))
+print(f"Mod  {a} % {b} : ",calcultaor(a,b,"mod"))
