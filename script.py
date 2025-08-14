@@ -2,7 +2,7 @@
 print("Hello World!")
 
 
-def Sum(a,b,operation="add"):
+def calcultaor(a,b,operation="add"):
     if operation == "sub":
         return a-b
     elif operation == "mul":
@@ -13,9 +13,9 @@ def Sum(a,b,operation="add"):
         return a+b
 
 a,b = 4,5
-print("Test other operations ......")
+print("  Calculator  ".center(50,"="))
 print(f"a = {a} , b = {b}")
-print("Sum : ",Sum(a,b,"add"))
-print("Mul : ",Sum(a,b,"mul"))
-print("Div : ",Sum(a,b,"div"))
-print("Sub : ",Sum(a,b,"sub"))
+print(f"Sum  {a} + {b} : ",calcultaor(a,b,"add"))
+print(f"Mul  {a} * {b} : ",calcultaor(a,b,"mul"))
+print(f"Div  {a} / {b} : ",calcultaor(a,b,"div"))
+print(f"Sub  {a} - {b} : ",calcultaor(a,b,"sub"))
